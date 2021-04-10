@@ -39,11 +39,9 @@ type DefaultUserCustomStatus = {
 };
 
 const defaultCustomStatusSuggestions: DefaultUserCustomStatus[] = [
-    {emoji: 'calendar', message: t('custom_status.suggestions.in_a_meeting'), messageDefault: 'In a meeting'},
-    {emoji: 'hamburger', message: t('custom_status.suggestions.out_for_lunch'), messageDefault: 'Out for lunch'},
-    {emoji: 'sneezing_face', message: t('custom_status.suggestions.out_sick'), messageDefault: 'Out sick'},
+    {emoji: 'office', message: t('custom_status.suggestions.at_office'), messageDefault: 'At the office'},
     {emoji: 'house', message: t('custom_status.suggestions.working_from_home'), messageDefault: 'Working from home'},
-    {emoji: 'palm_tree', message: t('custom_status.suggestions.on_a_vacation'), messageDefault: 'On a vacation'},
+    {emoji: 'car', message: t('custom_status.suggestions.away'), messageDefault: 'Away (00:00)'},
 ];
 
 const CustomStatusModal: React.FC<Props> = (props: Props) => {
