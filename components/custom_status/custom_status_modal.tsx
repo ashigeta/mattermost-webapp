@@ -62,21 +62,9 @@ const {
 
 const defaultCustomStatusSuggestions: DefaultUserCustomStatus[] = [
     {
-        emoji: 'calendar',
-        message: t('custom_status.suggestions.in_a_meeting'),
-        messageDefault: 'In a meeting',
-        duration: ONE_HOUR,
-    },
-    {
-        emoji: 'hamburger',
-        message: t('custom_status.suggestions.out_for_lunch'),
-        messageDefault: 'Out for lunch',
-        duration: THIRTY_MINUTES,
-    },
-    {
-        emoji: 'sneezing_face',
-        message: t('custom_status.suggestions.out_sick'),
-        messageDefault: 'Out sick',
+        emoji: 'office',
+        message: t('custom_status.suggestions.at_office'),
+        messageDefault: 'At the office',
         duration: TODAY,
     },
     {
@@ -86,11 +74,17 @@ const defaultCustomStatusSuggestions: DefaultUserCustomStatus[] = [
         duration: TODAY,
     },
     {
-        emoji: 'palm_tree',
-        message: t('custom_status.suggestions.on_a_vacation'),
-        messageDefault: 'On a vacation',
-        duration: THIS_WEEK,
+        emoji: 'car',
+        message: t('custom_status.suggestions.away'),
+        messageDefault: 'Away (00:00)',
+        duration: ONE_HOUR,
     },
+    {
+        emoji: 'telephone',
+        message: t('custom_status.suggestions.in_a_meeting'),
+        messageDefault: 'In a meeting (00:00)',
+        duration: ONE_HOUR,
+    }
 ];
 
 const defaultDuration = TODAY;
