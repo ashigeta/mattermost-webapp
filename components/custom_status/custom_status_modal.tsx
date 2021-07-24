@@ -81,8 +81,9 @@ const defaultCustomStatusSuggestions: DefaultUserCustomStatus[] = [
     {
         emoji: 'telephone',
         message: t('custom_status.suggestions.in_a_meeting'),
-        messageDefault: 'In a meeting (00:00)'},
+        messageDefault: 'In a meeting (00:00)',
         duration: ONE_HOUR,
+    }
 ];
 
 const defaultDuration = TODAY;
